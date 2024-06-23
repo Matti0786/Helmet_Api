@@ -41,13 +41,10 @@ def upload_image():
             if class_name == 'Without Helmet':
                 without_helmet_detected = True
 
-        # Check any person without helmet
-        if class_name == 'Without Helmet':
-            without_helmet_detected = True
-
         results = {
                 'without_helmet_detected':without_helmet_detected
         }
+
 
         return results, 200
     except Exception as e:
